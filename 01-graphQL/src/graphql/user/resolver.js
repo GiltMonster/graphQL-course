@@ -21,7 +21,15 @@ function users() {
     },
     {
       id: 'sadfwe1234eg-12',
-      userName: 'PaggeNota',
+      userName: 'PaggNota',
+    },
+    {
+      id: '22134sadadf-12',
+      userName: 'Neves',
+    },
+    {
+      id: 'sadfqwer334-12',
+      userName: 'Matulis',
     },
   ];
 }
