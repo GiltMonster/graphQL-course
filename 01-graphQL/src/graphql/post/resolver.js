@@ -1,29 +1,9 @@
-function post() {
-  return {
-    id: 'askljdklasjd-21',
-    title: 'Esse é um poste falso',
-  };
+function post(_, { id }, { fetch, urlPost }) {
+  return fetch(`${urlPost}/${id}`).then((response) => response.json());
 }
 
-function posts() {
-  return [
-    {
-      id: 'askljdklsjd-21',
-      title: 'Esse é um poste falso',
-    },
-    {
-      id: 'dfsgdsfgdfg-21',
-      title: 'Esse é um poste falso',
-    },
-    {
-      id: 'cvbghjtryuy-21',
-      title: 'Esse é um poste falso',
-    },
-    {
-      id: 'rety45fghfg-21',
-      title: 'Esse é um poste falso',
-    },
-  ];
+function posts(_, __, { fetch, urlPost }) {
+  return fetch(urlPost).then((response) => response.json());
 }
 
 export const postResolver = {
